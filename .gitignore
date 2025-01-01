@@ -19,5 +19,8 @@ instance
 .mypy_cache
 .pytest_cache
 
+# environment
+environment
+
 # Testing folder
 test
