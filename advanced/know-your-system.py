@@ -52,6 +52,8 @@ def get_comprehensive_system_details():
     try:
         system_details['cpu_info'] = {
             'cores': os.cpu_count(),
+            'cpu_architecture': platform.processor(),
+            'cpu_frequency': os.sysconf('SC_CLK_TCK'),
         }
     except Exception as e:
         system_details['cpu_info'] = {'error': str(e)}
