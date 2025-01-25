@@ -199,7 +199,7 @@ def get_system_details():
     system_details['time_locale'] = {
         'current_time': datetime.datetime.now().isoformat(),
         'timezone': time.tzname,
-        'locale': locale.getdefaultlocale()
+        'locale': locale.getlocale()
     }
 
     # 8. Python Environment
@@ -223,5 +223,5 @@ def save_system_details_to_file(filename='full_system_details.json'):
 
 # Run the functions
 if __name__ == '__main__':
-    print_system_details()
+    # print_system_details()
     save_system_details_to_file()
