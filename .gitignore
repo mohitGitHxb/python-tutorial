@@ -21,6 +21,7 @@ instance
 
 # environment
 environment
+env
 
 # Testing folder
 test
